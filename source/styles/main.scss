@@ -14,6 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $secondary-text-color;
 }
+* {
+  box-sizing: border-box;  //在元素定义 padding，border的时候，不增加所占高度
+}
 .app-wrap {
   height: 100vh; // viewport height，100%的意思
   display: flex;
@@ -26,10 +29,16 @@ body {
   border-bottom: 2px solid #fff59b;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   a {
     color: $primary-color-text;
   }
-  justify-content: space-between;
+  .button {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
   // flex-shrink: 0; flexbox 默认会收缩没有内容的元素的高度，设置为0表示不收缩
 }
 .app-header > * {

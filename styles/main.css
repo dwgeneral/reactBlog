@@ -4,6 +4,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #727272; }
 
+* {
+  box-sizing: border-box; }
+
 .app-wrap {
   height: 100vh;
   display: -webkit-box;
@@ -32,9 +35,14 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding: 10px; }
   .app-header a {
     color: #FFFFFF; }
+  .app-header .button {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 4px; }
 
 .content {
   background-color: #fafafa;
