@@ -12,7 +12,7 @@ $divider-color:        #B6B6B6;
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  color: #727272;
+  color: $secondary-text-color;
 }
 .app-wrap {
   height: 100vh; // viewport height，100%的意思
@@ -20,10 +20,20 @@ body {
   flex-direction: column;
 }
 .app-header {
+  color: $primary-color-text;
   background-color: $primary-color;
   height: 80px;
   border-bottom: 2px solid #fff59b;
+  display: flex;
+  align-items: center;
+  a {
+    color: $primary-color-text;
+  }
+  justify-content: space-between;
   // flex-shrink: 0; flexbox 默认会收缩没有内容的元素的高度，设置为0表示不收缩
+}
+.app-header > * {
+  //border: 1px solid red;
 }
 .content {
   background-color: #fafafa;
@@ -37,4 +47,23 @@ body {
   height: 80px;
   background-color: $primary-color;
   border-top: 1px solid #e6e6e6;
+  display: flex;
+  a {
+    border-left: 2px solid light-blue;
+    flex-grow: 1;
+    &:first-child {
+      border-left: 0;
+    }
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: gray;
+    i {
+      display: block;
+      font-size: 25px;
+      color: white;
+      text-shadow: 3px 3px 0 light-blue;
+      padding-bottom: 10px;
+    }
+  }
 }
