@@ -1,1 +1,48 @@
-<h1>blog</h1>
+<section class="blogs">
+  <div class="post">
+    <div class="p-header"><span>1</span></div>
+    <div class="p-content">
+      <h1>sublime 小记</h1>
+      <p>
+        最近尝试了一下 sublime Text 编辑器，被它的强大功能吸引了，而且它和 Vim 的操作习惯还算统一，所以可以玩玩！
+        1. 多点编辑： 按住 Command ＋ 鼠标点击
+        2. 呼出左侧 folder :  Command + K + B
+        3. 呼出命令面板 : Command + Shift + p
+        4. 快速打开一个文件： Command + p   (文件名/文件名@关键字）光标自动跳转到关键字位置
+        5. 快速创建文件： Command + Option + n
+        持续更新。。。
+      <p>
+      <button class="p-action">阅读更多</button>
+    </div>
+  </div>
+  <div class="post">
+    <div class="p-header"><span>2</span></div>
+    <div class="p-content">
+      <h1>浅析 viewport</h1>
+      <p>
+        我所说的 viewport 是指当我们在显示页面的时候，浏览器会默认的认为页面水平宽度为960px(实际像素小于960的也就是小屏幕设备)，那么这样在PC端适配的页面，放到Phone上字体会变的非常小，页面也会变形。所以解决方案就是添加一行 viewport 代码：
+        <meta name = "viewport"  content = "width=device-width" >
+        这样就解决了问题，意思是把我的视窗 viewport 的宽度.
+      </p>
+      <button class="p-action">阅读更多</button>
+    </div>
+  </div>
+  <div class="post">
+    <div class="p-header"><span>3</span></div>
+    <div class="p-content">
+      <h1>说说 SASS</h1>
+      <p>
+        Sass 的功能很多，有三个是比较重要的：
+        第一，变量使用。
+        第二，语句嵌套。
+        第三，文件拆分。
+        前两个就不说了，没什么特别的地方。说说文件拆分的对应规则：
+        @import "common"  --->  _common.scss
+        @import "sections"  --->   _sections.scss
+      </p>
+
+      <button class="p-action">阅读更多</button>
+    </div>
+  </div>
+</section>
+
